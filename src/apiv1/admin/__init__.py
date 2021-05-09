@@ -12,7 +12,7 @@ User = get_user_model()
 class UserModelAdmin(admin.ModelAdmin):
     exclude = ('password', 'email')
 
-for name, obj in inspect.getmembers(sys.modules['src.api.models']):
+for name, obj in inspect.getmembers(sys.modules['src.apiv1.models']):
     if inspect.isclass(obj):
         admin.site.register(obj, UserModelAdmin)
 
