@@ -14,4 +14,7 @@ collectstatic:
 serve:
 	python3 manage.py runserver
 
+test:
+	python manage.py test
+
 .PHONY: set_env_vars
