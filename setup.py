@@ -22,5 +22,7 @@ setup(
         "django-cors-headers==3.7.0",
         "whitenoise==5.2.0",
         "gunicorn==20.1.0",
+        "pytest==6.2.4",
+        "pytest-cov==2.11.1"
     ]
 )
